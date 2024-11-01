@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "myproject"
+version = "0.1.0"
+description = ""
+authors = ["Hojoong Jang <hojoong310@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "4.26"
+pymysql = "^1.1.1"
+cryptography = "^43.0.3"
+emoji = "^2.14.0"
+pillow = "^11.0.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
