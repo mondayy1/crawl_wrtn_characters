@@ -2,7 +2,7 @@
 
 뤼튼 AI 캐릭터들의 정보를 수집하고 적재하는 기능을 구현했습니다.
 
-- Selenium을 사용한 크롤링은 도커환경에서의 브라우저 드라이버 문제를 해결하지 못하여 코드만 올려놓았습니다.
+- Selenium을 사용한 크롤링은 도커환경에서의 브라우저 드라이버 문제를 해결하지 못하여 코드만 올려놓았습니다. (myproject/run.py)
 - 현재 도커로 실행되는 코드는 뤼튼의 API를 통해 캐릭터 정보를 가져옵니다.
 
 ## DB Schema
@@ -11,12 +11,11 @@
 
 ## Command Lines
 
-ver.API 
 1. 저장소를 클론합니다.
     ```bash
     git clone git@github.com:mondayy1/crawl_wrtn_characters.git
     ```
-2. 컨테이너들을 실행시킵니다.
+2. 컨테이너를 실행시킵니다.
     ```bash
     docker-compose up -d
     ```
