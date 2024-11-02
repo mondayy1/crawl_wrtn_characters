@@ -17,7 +17,7 @@
     ```
 2. 폴더 내부로 접근합니다.
     ```bash
-    cd crawl_wrtn_characters.git
+    cd crawl_wrtn_characters
     ```
 3. 컨테이너를 실행시킵니다.
     ```bash
