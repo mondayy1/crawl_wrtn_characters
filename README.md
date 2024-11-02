@@ -15,23 +15,27 @@
     ```bash
     git clone git@github.com:mondayy1/crawl_wrtn_characters.git
     ```
-2. 컨테이너를 실행시킵니다.
+2. 폴더 내부로 접근합니다.
+    ```bash
+    cd crawl_wrtn_characters.git
+    ```
+3. 컨테이너를 실행시킵니다.
     ```bash
     docker-compose up -d
     ```
-3. app 컨테이너에 접근합니다.
+4. app 컨테이너에 접근합니다.
     ```bash
     docker-compose exec app bash
     ```
-4. API 크롤링 스크립트를 실행합니다.
+5. API 크롤링 스크립트를 실행합니다.
     ```bash
     poetry run python ./myproject/apicrawl_with_run.py
     ```
-5. 데이터가 잘 들어갔는지 확인하는 테스트 스크립트를 실행합니다.
+6. 데이터가 잘 들어갔는지 확인하는 테스트 스크립트를 실행합니다.
     ```bash
     poetry run python ./tests/datatest.py
     ```
-6. 터미널에 테스트 성공 여부, 캐릭터 정보 및 로컬에 생성된 이미지를 확인합니다. (character_img.png)
+7. 터미널에 테스트 성공 여부, 캐릭터 정보 및 로컬에 생성된 이미지를 확인합니다. (character_img.png)
     ```bash
     checkRecordCount SUCCESS
     checkDuplicted SUCCESS
