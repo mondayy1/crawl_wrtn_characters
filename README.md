@@ -5,10 +5,11 @@
 - Selenium을 사용한 크롤링은 도커환경에서 브라우저 드라이버 문제를 해결하지 못하여 기한내에 제출하기 위해 코드만 올려놓았습니다.
 - 현재 도커로 실행되는 코드는 뤼튼의 API를 통해 캐릭터 정보를 가져옵니다.
 
-### DB Schema
+## DB Schema
 
 <img width="540" alt="Screenshot 2024-11-02 at 4 12 00 PM" src="https://github.com/user-attachments/assets/9d916292-b9c4-42c4-8c46-c98021c85dfe">
 
+## Command Lines
 
 ver.API 
 1. 저장소를 클론합니다.
