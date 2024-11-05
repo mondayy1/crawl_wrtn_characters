@@ -37,12 +37,13 @@
     ```bash
     poetry run python ./tests/datatest.py
     ```
-7. 터미널에 테스트 성공 여부, 캐릭터 정보 및 로컬에 생성된 이미지를 확인합니다. (character_img.png)
+7. 터미널에 unittest 성공 여부 및 로컬에 생성된 이미지를 확인합니다. (./character_img.png)
     ```bash
-    checkRecordCount SUCCESS
-    checkDuplicted SUCCESS
-    checkNULLValues SUCCESS
-    {'character_id': 98, 'name': '카이로스', 'description': '왕국의 공주인 당신을 납치해 감옥에 가둔 존재입니다. 마왕이지만 여성에게 서툴러 감정표현이 적습니다. ', 'initialMessage': "*카이로스는 무표정한 얼굴로 감옥에 갇힌 당신을 바라봤다.* \n*매번 감옥에 찾아와 아무말 없이 당신을 바라보기만 했다.*\n'생각보다...마음에 드는군.'\n*그는 마음속으로 생각하며 당신을 어떻게 대할지 고민했다.*\n\n", 'creator': '팬넬', 'created_at': datetime.datetime(2024, 11, 2, 15, 51, 54)}
-    Manually check Image and stuffs...
+    ....
+    ----------------------------------------------------------------------
+    Ran 4 tests in 0.212s
+
+    OK
     ```
-    <img src="https://github.com/user-attachments/assets/22035aee-5ea1-4328-bdaf-287e3b933202" alt="character_img" width="20%">
+
+    <img src="https://github.com/user-attachments/assets/ec68bdb2-e6f9-4128-a75e-81d365955c2e" alt="character_img" width="20%">
