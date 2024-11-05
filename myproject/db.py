@@ -1,6 +1,7 @@
 import os
 import pymysql
 
+
 def get_connection():
     connection = pymysql.connect(
         host=os.environ.get("DB_HOST", "localhost"),
@@ -12,6 +13,7 @@ def get_connection():
         autocommit=True
     )
     return connection
+
 
 def create_tables(cursor):
     cursor.execute('DROP TABLE IF EXISTS character_category;')
@@ -39,12 +41,14 @@ def create_tables(cursor):
         ) ENGINE=MYISAM CHARSET=UTF8;
     ''')
 
+
 def insert_character_category(cursor, name, category):
     query = '''
         INSERT INTO character_category (name, category)
         VALUES (%s, %s)
     '''
     cursor.execute(query, (name, category))
+
 
 def insert_character_info(cursor, name, description, image_blob, initial_message, creator):
     """캐릭터 정보를 DB에 삽입"""

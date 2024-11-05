@@ -9,18 +9,19 @@ import base64
 from emoji import core
 import time
 
+
 def init_driver():
     options = webdriver.ChromeOptions()
     options.add_argument('--no-sandbox')
     options.add_argument('--headless')
     options.add_argument('--disable-dev-shm-usage')
-
-    
+  
     driver = webdriver.Chrome(options=options)
 
     driver.get('https://wrtn.ai/character/explore?sort=likeCount')
     time.sleep(2)
     return driver
+
 
 def fetch_character_data(driver, category_index, character_index):
     wait = WebDriverWait(driver, 10)

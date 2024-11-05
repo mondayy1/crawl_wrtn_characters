@@ -39,5 +39,3 @@ for index, character in enumerate(characters):
 print('API CRAWLING FINISHED')
 end_time = time.time()
 print(f'TOTAL TIME: {end_time - start_time:.2f}초')
-
-    

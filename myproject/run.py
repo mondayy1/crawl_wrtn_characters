@@ -2,6 +2,7 @@ import time
 from db import get_connection, create_tables, insert_character_category, insert_character_info
 from crawler import init_driver, fetch_character_data
 
+
 def main(cnt_character):
     start_time = time.time()
     cnt_success = 0; cnt_fail = 0

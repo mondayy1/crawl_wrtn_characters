@@ -14,6 +14,7 @@ def checkRecordCounts(cursor):
     else:
         print(f"checkRecordCount FAILED, category has {category_count}, info has {info_count}")
 
+
 def checkDuplicated(cursor):
     cursor.execute("SELECT name, description, initialMessage, COUNT(*) FROM character_info GROUP BY name, description, initialMessage HAVING COUNT(*) > 1")
     info_duplicates = cursor.fetchall()
@@ -21,6 +22,7 @@ def checkDuplicated(cursor):
         print("checkDuplicted SUCCESS")
     else:
         print("checkDuplicated FAILED, character_info")
+
 
 def checkNULLValues(cursor):
     cursor.execute("SELECT COUNT(*) FROM character_category WHERE name IS NULL")
@@ -31,6 +33,7 @@ def checkNULLValues(cursor):
         print("checkNULLValues SUCCESS")
     else:
         print(f"checkNULLValues FAILED, category has {category_null_count}, info has {info_null_count}")
+
 
 def checkInfo(cursor):
     cursor.execute("SELECT * FROM character_info ORDER BY rand() LIMIT 1")
