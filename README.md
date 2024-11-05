@@ -35,7 +35,7 @@
     ```
 6. 데이터가 잘 들어갔는지 확인하는 테스트 스크립트를 실행합니다.
     ```bash
-    poetry run python ./tests/datatest.py
+    poetry run python ./tests/test_data.py
     ```
 7. 터미널에 unittest 성공 여부 및 로컬에 생성된 이미지를 확인합니다. (./character_img.png)
     ```bash
