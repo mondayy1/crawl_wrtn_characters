@@ -33,8 +33,8 @@ def create_tables(cursor):
             character_id INT AUTO_INCREMENT,
             name VARCHAR(13),
             description VARCHAR(251),
-            imageBlob MEDIUMBLOB,
-            initialMessage VARCHAR(1001),
+            image_blob MEDIUMBLOB,
+            initial_message VARCHAR(1001),
             creator VARCHAR(13),
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (character_id) REFERENCES character_category(character_id)
@@ -53,7 +53,7 @@ def insert_character_category(cursor, name, category):
 def insert_character_info(cursor, name, description, image_blob, initial_message, creator):
     """캐릭터 정보를 DB에 삽입"""
     query = '''
-        INSERT INTO character_info (name, description, imageBlob, initialMessage, creator)
+        INSERT INTO character_info (name, description, image_blob, initial_message, creator)
         VALUES (%s, %s, %s, %s, %s)
     '''
     cursor.execute(query, (name, description, image_blob, initial_message, creator))
