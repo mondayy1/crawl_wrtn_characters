@@ -45,5 +45,5 @@
 
     OK
     ```
-
-    <img src="https://github.com/user-attachments/assets/ec68bdb2-e6f9-4128-a75e-81d365955c2e" alt="character_img" width="20%">
+    
+    <img src="https://github.com/user-attachments/assets/52fd7c24-a715-4e1f-945c-0c5a223c96b3" alt="character_img" width="20%">
