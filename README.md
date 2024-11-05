@@ -7,7 +7,9 @@
 
 ## DB Schema
 
-<img width="540" alt="Screenshot 2024-11-02 at 4 12 00 PM" src="https://github.com/user-attachments/assets/9d916292-b9c4-42c4-8c46-c98021c85dfe">
+<img width="593" alt="Screenshot 2024-11-05 at 11 58 24 PM" src="https://github.com/user-attachments/assets/afdbb833-f1d7-4c2f-abb8-a6514127db14">
+
+각 column의 definition은 데이터의 성질에 맞게 최적화시켰습니다.
 
 ## Command Lines
 
