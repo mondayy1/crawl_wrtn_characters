@@ -4,6 +4,7 @@ import base64
 import pymysql
 import os
 
+
 def checkRecordCounts(cursor):
     cursor.execute("SELECT COUNT(*) FROM character_category")
     category_count = cursor.fetchone()['COUNT(*)']
